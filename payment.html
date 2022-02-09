@@ -1,0 +1,262 @@
+<!-- Navandeep Singh 1896509-->
+
+<html>
+<head>    
+    <title>Book My Show</title>
+        <link rel="stylesheet" type="text/css" href="CSS/myStyle.css">
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="js/jsFile.js"></script>
+
+        <script language="javascript">
+            function ok(){
+                var a=(prompt("enter yes to confirm"))
+                var b="yes"
+                if(a==b){
+                    alert("Thank you, you booking have been confirmed. Have a great day ahead.")
+                }
+            }
+
+            function lossUnsaved(){
+                            window.addEventListener("beforeunload", function (e) {
+                    var confirmationMessage = 'It looks like you have been editing something. '
+                                            + 'If you leave before saving, your changes will be lost.';
+
+                    (e || window.event).returnValue = confirmationMessage; //Gecko + IE
+                    return confirmationMessage; //Gecko + Webkit, Safari, Chrome etc.
+                });
+            }
+        </script>
+        
+</head>
+<body id="paymentBody">
+    
+    <div class="announcement">
+        <p class="announcement-message">WE'RE BACK. DUE TO PANDEMIC SOME THEATRES HAVE CHANGED TIMINGS. PLEASE CONTACT US IF YOU HAVE ANY QUESTIONS. </p>
+    </div>
+
+    <div>
+            <ul class="Navbar">
+                <li class="logo"><a id="logoText" href="index.html">Book<span class="logoColr2">My</span>Show </a></li>
+                <li class="logo"><input type="text" id="search" placeholder="Search for Movies, Events and Sports."></li>
+                <li class="dropdown">
+                   <!-- <select class="dropdown">
+                        <option  value="English">ENGLISH</option>
+                        <option value="French">FRENCH</option>
+                    </select> -->
+                </li>
+                <li><a href="signup.html" >SIGNUP</a></li>
+                <li><a href="Login.html" class="active" >LOG IN</a></li> 
+                <li><a href="contact.html">CONTACT</a> </li>
+                <li><a href="about.html">ABOUT US</a> </li>
+                <li><a href="index.html" >HOME</a> 
+            </ul>
+    </div>
+
+    <div>
+        <ul id="secondaryNavbar">
+            <li class="secondaryNavbar"><a id="logoText" href="movies.html">Movies</a></li>
+            <li class="secondaryNavbar"><a id="logoText" href="events.html">Events</a></li>
+            <li class="secondaryNavbar"><a id="logoText" href="food.html">Food & Drink</a></li>
+            <li class="secondaryNavbar"><a id="logoText" href="quote.html">Get-a-Quote</a></li>
+            <li class="secondaryNavbar"><a id="logoText" href="offers.html">Giftcards</a></li>
+        </ul>
+</div>
+
+
+<div id="paymentContainer">
+<table id="paymentTable">
+    <tr>
+        <td class="paymentTd">
+            <img src="assets/bloodshot.jpg" width="317px" height="470">
+            <img src="assets/bloodshot2.jpg" width="317px" height="470"> 
+        </td>
+        <td class="paymentTd1">
+            <h2 id="paymentHead">Bloodshot</h2>
+            <p>MARCH 13, 2020 <span class="paymentSpan">Length: </span> 1h 50m</p><br>
+            <span class="paymentSpan">Action, Fantasy</span><br>
+            <br>
+            <p>IMDb: 5.7/10</p>
+
+            <br>
+            <button id="paymentButton"><a href="https://www.youtube.com/watch?v=vOUVVDWdXbo"><span id="buttonTextPayment">Trailer</span></a></button>
+            
+        </td>
+       
+    </tr>
+</table> 
+
+
+<div class="about3">
+    <h1>Synopsis</h1>
+</div>
+
+<div class="about3">
+    <p>Based on the bestselling comic book, Vin Diesel stars as Ray Garrison, a soldier recently killed in action and brought back to life as the superhero 
+        Bloodshot by the RST corporation. With an army of nanotechnology in his veins, he's an unstoppable force --stronger than ever and able to heal instantly. 
+        But in controlling his body, the company has sway over his mind and memories, too. Now, Ray doesn't know what's real and what's not -- but he's on a mission 
+        to find out.
+    </p>
+    </div>
+
+    <div class="about3">
+        <h1>Cast</h1>
+    </div>
+
+    <div class="about3">
+        <p>Michael Sheen, Vin Diesel, Eiza González, Sam Heughan, Toby Kebbell, Talulah Riley, Lamorne Morris, Guy Pearce, Jóhannes Haukur Jóhannesson, 
+            Alex Hernandez, Siddharth Dhananjay, Tamer Burjaq, Clyde Berning, David Dukas, Charlie Bouguenon, Tyrel Meyer, Frans Steyn, David Davadoss, 
+            Alex Anlos, Nic Rasenti, Ryan Michael Sin, Michael Kirch, Ryan Kruger, Austin Rose, Gary Naidoo, Hilton Sun, Jeremy Jess Boado</p>
+    </div>
+
+    <div class="about3">
+        <h1>Directors</h1>
+    </div>
+
+    <div class="about3">
+        <p>Dave Wilson, Dave Wilson</p>
+    </div>
+
+    <div class="about3">
+        <h1>Producers</h1>
+    </div>
+
+    <div class="about3">
+        <p>Neal H. Moritz, Toby Jaffe, Dinesh Shamdasani, Vin Diesel, Chris Cowles, Dione Wood, Dan Mintz, Yu Dong, 
+            Jeffrey Chan, Matthew Vaughn, Louis G. Friedman, Rita Benson LeBlanc, Buddy Patrick, Steven Matzkin, Sarah Schroeder-Matzkin, 
+            Matthew Rhodes, Jonathan Gray, Matthew Antoun, Mark Strome, Maurice Fadida, Jason Kothari</p>
+    </div>
+
+    <div class="about3">
+        <h1>Writers</h1>
+    </div>
+
+    <div class="about3">
+        <p>Jeff Wadlow, Eric Heisserer, Adam Cozad, Kevin Van Hook, Don Perlin</p>
+    </div>
+
+    <div class="about3">
+        <h1>Check out showtimes for this movie!</h1>
+    </div>
+
+    <div class="about3">
+        <span>Date:<input type="date" class="paymentInput" required onclick="lossUnsaved()"> At 
+            <select class="paymentInput">
+                <option>Cinema StarCite Montreal</option>
+                <option>Cinema Saint John</option>
+                <option>Cinema StarCite Laval</option>
+                <option>Cinema Strawberry hills</option>
+            </select></span>
+            <br>
+            Time: <select class="paymentInput">
+                <option>2:00pm</option>
+                <option>4:00pm</option>
+                <option>6:30pm</option>
+                <option>9:30pm</option>
+            </select>
+
+            <br>
+            <br>
+
+            <button class="paymentInput2" onclick="ok()">Confirm Payment</button>
+    </div>
+
+</div> 
+
+  
+
+
+
+<footer class="footer">
+
+<div class="footer-message"><span id="footerText">List your Show </span>
+    Got a show, event, activity or a great experience? Partner with us & get listed on BookMyShow
+
+    <a href="contact.html"><button id="buttonFooter">Contact today!</button></a>
+    </div>
+
+    <div="horizontal">
+<hr>
+</div>
+
+</footer>
+
+
+
+
+<table>
+    <tr>
+        <th>Navigate</th>
+        <th>Help</th>
+        <th>Top Movies and Events</th>
+        <th>Newsletter</th>
+    </tr>
+
+    <tr>
+        <td><a href="index.html" class="footerLinks">Home</a></td>
+        <td><a href="#search" class="footerLinks">Search</a></td>
+        <td><a href="movies.html" class="footerLinks">Avengers</a></td>
+        <td rowspan="2">Get updates, news and specials before anyone else.</td>
+    </tr>
+
+    <tr>
+        <td><a href="signup.html" class="footerLinks">Signup</a></td>
+        <td><a href="quote.html" class="footerLinks">Get-a-Quote</a></td>
+        <td><a href="movies.html" class="footerLinks">Chal mera putt 2</a></td>
+    </tr>
+
+    <tr>
+        <td><a href="login.html" class="footerLinks">Log In</a></td>
+        <td><a href="contact.html" class="footerLinks">Help</a></td>
+        <td><a href="movies.html" class="footerLinks">Bloodshot</a></td>
+        <td rowspan="2" >
+            <input type="email" placeholder="Type you email here.." id="emailFooter">
+            <span><button class="emailFooter">Subscribe</button></span>
+        </td>
+    </tr>
+
+    <tr>
+        <td><a href="about.html" class="footerLinks">About</a></td>
+        <td><a href="conditions.html" class="footerLinks">Terms & Conditions</a></td>
+        <td><a href="movies.html" class="footerLinks">Scoob!</a></td>
+        
+    </tr>
+
+    <tr>
+        <td><a href="movies.html" class="footerLinks">Movies</a></td>
+        <td> </td>
+        <td><a href="movies.html" class="footerLinks">The invisible man</a></td>
+        
+    </tr>
+
+    <tr>
+        <td> <a href="contact.html" class="footerLinks">Contact</a></td>
+        <td> </td>
+        <td><a href="movies.html" class="footerLinks">Underwater</a></td>
+        
+    </tr>
+
+   
+
+</table>
+
+<div class="footer">
+<hr>
+</div>
+
+<table>
+    <tr>
+        <th> <p class="footer">Copyright &copy; 2020 All Rights Reserved by BookMyShow</p></th>
+        <th>
+            <a href="https://www.facebook.com/navandeep.singh.73" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/explore" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/navan.rana/" class="fa fa-instagram"></a>
+            <a href="mailto:navandeep0511@gmail.com" class="fa fa-google"></a>
+            <a href="https://www.youtube.com/channel/UChzUn-zq1V6KnQHSe24okFg?view_as=subscriber" class="fa fa-youtube"></a>
+        </th>
+    </tr>
+</table>
+
+
+
+</body>
+</html>
