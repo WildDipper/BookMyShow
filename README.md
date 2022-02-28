@@ -16,3 +16,18 @@ support directly and will reserve the seat and send confirmation to the
 customer. The Website will be responsive to any device using it. This allows
 for consumers to access the service from any sort of hardware device:
 tablet, computer, mobile devices, and so on. 
+
+
+
+
+▪ USABILITY
+ The user is able to easily interact with the website.
+▪ MAINTAINABILITY
+The faults in the website should be easily found and fixed.
+▪ SCALABILITY
+The website is able to expand its processing capabilities to
+support its growth.
+▪ ACCESSIBILITY
+The website is accessible by the people.
+▪ AVAILABILITY
+The website is available to people at all times
